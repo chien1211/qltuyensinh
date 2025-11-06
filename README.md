@@ -48,7 +48,7 @@ Prettier – Code Formatter
 4.2. Tải project
 Clone project về thư mục htdocs của XAMPP (ví dụ ổ C):
 cd C:\xampp\htdocs
-https://github.com/tyanzuq2811/BTL_Quan_ly_doan_vien.git
+https://github.com/chien1211/qltuyensinh.git
 Truy cập project qua đường dẫn:
 👉 http://localhost/authentication_login.
 
@@ -57,3 +57,44 @@ Mở XAMPP Control Panel, Start Apache và MySQL
 
 Truy cập MySQL WorkBench Tạo database:
 
+4.4. Setup tham số kết nối
+Mở file config.php (hoặc .env) trong project, chỉnh thông tin DB:
+
+<?php
+
+function getDbConnection() {
+    $servername = "localhost";
+    $username = "root";
+    $password = "Chien2005@";
+    $dbname = "qltuyensinh";
+    $port = 3306;
+
+    // Tạo kết nối
+    $conn = mysqli_connect($servername, $username, $password, $dbname, $port);
+
+    // Kiểm tra kết nối
+    if (!$conn) {
+        die("Kết nối database thất bại: " . mysqli_connect_error());
+    }
+    // Thiết lập charset cho kết nối (quan trọng để hiển thị tiếng Việt đúng)
+    mysqli_set_charset($conn, "utf8");
+    return $conn;
+}
+
+?>
+
+4.5. Chạy hệ thống
+Mở XAMPP Control Panel → Start Apache và MySQL
+
+Truy cập hệ thống: 👉 http://localhost/index.php
+
+4.6. Đăng nhập lần đầu
+Hệ thống có thể cấp tài khoản admin
+
+Sau khi đăng nhập Admin có thể:
+
+Tạo thông tin tổ chức đoàn (Đoàn trường, Liên chi, Chi đoàn)
+
+Thêm đoàn viên và cấp tài khoản
+
+Quản lý phân quyền theo cấp
