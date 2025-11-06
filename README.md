@@ -60,6 +60,7 @@ Truy cập MySQL WorkBench Tạo database:
 4.4. Setup tham số kết nối
 Mở file config.php (hoặc .env) trong project, chỉnh thông tin DB:
 
+'''
 <?php
 
 function getDbConnection() {
@@ -82,6 +83,7 @@ function getDbConnection() {
 }
 
 ?>
+'''
 
 4.5. Chạy hệ thống
 Mở XAMPP Control Panel → Start Apache và MySQL
