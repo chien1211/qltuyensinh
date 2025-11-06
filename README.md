@@ -47,10 +47,13 @@ Prettier – Code Formatter
 
 4.2. Tải project
 Clone project về thư mục htdocs của XAMPP (ví dụ ổ C):
+
+```
 cd C:\xampp\htdocs
 https://github.com/chien1211/qltuyensinh.git
 Truy cập project qua đường dẫn:
 👉 http://localhost/authentication_login.
+```
 
 4.3. Setup database
 Mở XAMPP Control Panel, Start Apache và MySQL
