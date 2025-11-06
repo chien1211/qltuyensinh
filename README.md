@@ -35,15 +35,16 @@ Do đó, việc xây dựng một Hệ thống Quản lý Tuyển sinh trực tu
 
 ### ⚙️ 4. Cài đặt
 4.1. Cài đặt công cụ, môi trường và các thư viện cần thiết
-Tải và cài đặt XAMPP
+
+* Tải và cài đặt XAMPP
 👉 https://www.apachefriends.org/download.html
 (Khuyến nghị bản XAMPP với PHP 8.x)
 
-Cài đặt Visual Studio Code và các extension:
+* Cài đặt Visual Studio Code và các extension:
 
-PHP Intelephense
-MySQL
-Prettier – Code Formatter
+* PHP Intelephense
+* MySQL
+* Prettier – Code Formatter
 
 4.2. Tải project
 Clone project về thư mục htdocs của XAMPP (ví dụ ổ C):
