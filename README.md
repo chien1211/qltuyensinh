@@ -96,10 +96,3 @@ Truy cập hệ thống: 👉 http://localhost/index.php
 4.6. Đăng nhập lần đầu
 Hệ thống có thể cấp tài khoản admin
 
-Sau khi đăng nhập Admin có thể:
-
-Tạo thông tin tổ chức đoàn (Đoàn trường, Liên chi, Chi đoàn)
-
-Thêm đoàn viên và cấp tài khoản
-
-Quản lý phân quyền theo cấp
