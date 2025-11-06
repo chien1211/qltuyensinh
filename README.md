@@ -37,6 +37,7 @@ Do đó, việc xây dựng một Hệ thống Quản lý Tuyển sinh trực tu
 4.1. Cài đặt công cụ, môi trường và các thư viện cần thiết
 
 * Tải và cài đặt XAMPP
+
     👉 https://www.apachefriends.org/download.html
     (Khuyến nghị bản XAMPP với PHP 8.x)
 
@@ -46,6 +47,7 @@ Do đó, việc xây dựng một Hệ thống Quản lý Tuyển sinh trực tu
     * Prettier – Code Formatter
 
 4.2. Tải project
+
 Clone project về thư mục htdocs của XAMPP (ví dụ ổ C):
 
 ```
@@ -56,11 +58,19 @@ Truy cập project qua đường dẫn:
 ```
 
 4.3. Setup database
+
 Mở XAMPP Control Panel, Start Apache và MySQL
 
 Truy cập MySQL WorkBench Tạo database:
 
+```
+CREATE DATABASE IF NOT EXISTS ql_tuyen_sinh
+   CHARACTER SET utf8mb4
+   COLLATE utf8mb4_unicode_ci;
+```
+
 4.4. Setup tham số kết nối
+
 Mở file config.php (hoặc .env) trong project, chỉnh thông tin DB:
 
 ```
@@ -89,10 +99,21 @@ function getDbConnection() {
 ```
 
 4.5. Chạy hệ thống
+
 Mở XAMPP Control Panel → Start Apache và MySQL
 
 Truy cập hệ thống: 👉 http://localhost/index.php
 
 4.6. Đăng nhập lần đầu
+
 Hệ thống có thể cấp tài khoản admin
+
+Sau khi đăng nhập Admin có thể:
+
+Quản lý thông tin (Quản lý cán bộ, Quản lý ngành học, Quản lý tuyển sinh)
+
+Thêm cán bộ và cấp tài khoản
+
+Quản lý phân quyền theo cấp
+
 
