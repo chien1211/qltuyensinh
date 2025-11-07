@@ -12,7 +12,7 @@ Do đó, việc xây dựng một Hệ thống Quản lý Tuyển sinh trực tu
 ###Trang đăng nhập
 <img width="1430" height="754" alt="image" src="https://github.com/user-attachments/assets/22f649df-57bf-439e-b496-96293b16c089" />
 
-###Trang quản trị viên
+###Bảng điều khiển
 <img width="1899" height="908" alt="image" src="https://github.com/user-attachments/assets/73c10cc4-8f1b-4385-a206-f569463df105" />
 
 ###Quản lý cán bộ
@@ -102,7 +102,7 @@ function getDbConnection() {
 
 Mở XAMPP Control Panel → Start Apache và MySQL
 
-Truy cập hệ thống: 👉 http://localhost/index.php
+Truy cập hệ thống: 👉 http://localhost/qltuyensinh/index.php
 
 4.6. Đăng nhập lần đầu
 
